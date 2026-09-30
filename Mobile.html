@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="Mobile.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <h1>Employee Management System</h1>
+
+            <p>
+                Manage employees and attendance
+            </p>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+            <div class="dashboard-card">
+
+                <h3>Total Employees</h3>
+
+                <h2 id="totalEmployees">0</h2>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Present Today</h3>
+
+                <h2 id="presentEmployees">0</h2>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Checked Out</h3>
+
+                <h2 id="checkedOutEmployees">0</h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADD EMPLOYEE -->
+
+        <section class="card">
+
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <div class="form-row">
+
+
+                    <!-- Employee ID -->
+
+                    <div class="form-group">
+
+                        <label for="employeeId">
+                            Employee ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="employeeId"
+                            placeholder="Enter Employee ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Employee Name -->
+
+                    <div class="form-group">
+
+                        <label for="employeeName">
+                            Employee Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="employeeName"
+                            placeholder="Enter Employee Name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Department -->
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="HR">
+                                HR
+                            </option>
+
+                            <option value="IT">
+                                IT
+                            </option>
+
+                            <option value="Finance">
+                                Finance
+                            </option>
+
+                            <option value="Sales">
+                                Sales
+                            </option>
+
+                            <option value="Marketing">
+                                Marketing
+                            </option>
+
+                            <option value="Operations">
+                                Operations
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary">
+
+                    Add Employee
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- EMPLOYEE LIST -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>Employee List</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search employee..."
+                >
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Employee ID</th>
+
+                            <th>Name</th>
+
+                            <th>Department</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="employeeTableBody">
+
+                        <!-- JavaScript will add employees here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ATTENDANCE -->
+
+        <section class="card">
+
+            <h2>Employee Attendance</h2>
+
+
+            <div class="attendance-box">
+
+                <input
+                    type="text"
+                    id="attendanceId"
+                    placeholder="Enter Employee ID"
+                >
+
+
+                <button
+                    type="button"
+                    id="checkInBtn"
+                    class="btn check-in">
+
+                    Check In
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="checkOutBtn"
+                    class="btn check-out">
+
+                    Check Out
+
+                </button>
+
+            </div>
+
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- ATTENDANCE RECORDS -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>Attendance Records</h2>
+
+
+                <button
+                    type="button"
+                    id="clearAttendanceBtn"
+                    class="btn clear">
+
+                    Clear Records
+
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Employee ID</th>
+
+                            <th>Name</th>
+
+                            <th>Date</th>
+
+                            <th>Check In</th>
+
+                            <th>Check Out</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="attendanceTableBody">
+
+                        <!-- JavaScript will add attendance here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="Mobile.js"></script>
+
+</body>
+
+</html>

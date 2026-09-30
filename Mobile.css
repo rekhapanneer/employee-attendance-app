@@ -1,0 +1,743 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #222;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.header h1 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+
+.header p {
+    font-size: 15px;
+
+    color: #666;
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.dashboard-card {
+    background-color: #ffffff;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.dashboard-card h3 {
+    font-size: 15px;
+
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+
+.dashboard-card h2 {
+    font-size: 32px;
+
+    color: #222;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.card {
+    background-color: #ffffff;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.card > h2 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+
+/* =========================================
+   ADD EMPLOYEE FORM
+========================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    color: #333;
+}
+
+
+/* =========================================
+   INPUT & SELECT
+========================================= */
+
+input,
+select {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    background-color: #ffffff;
+
+    color: #222;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+input::placeholder {
+    color: #999;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #555;
+
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn {
+    border: none;
+
+    border-radius: 6px;
+
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary {
+    background-color: #222222;
+
+    color: #ffffff;
+}
+
+
+.primary:hover {
+    background-color: #444444;
+}
+
+
+/* =========================================
+   CHECK IN BUTTON
+========================================= */
+
+.check-in {
+    background-color: #198754;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CHECK OUT BUTTON
+========================================= */
+
+.check-out {
+    background-color: #dc3545;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CLEAR BUTTON
+========================================= */
+
+.clear {
+    background-color: #555555;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete {
+    background-color: #dc3545;
+
+    color: #ffffff;
+
+    min-height: 34px;
+
+    padding: 0 12px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-title h2 {
+    margin-bottom: 0;
+}
+
+
+.section-title input {
+    width: 250px;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+
+    background-color: #ffffff;
+}
+
+
+thead {
+    background-color: #f1f3f5;
+}
+
+
+th {
+    padding: 13px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    border-bottom: 1px solid #dddddd;
+
+    white-space: nowrap;
+}
+
+
+td {
+    padding: 13px;
+
+    font-size: 14px;
+
+    color: #444;
+
+    border-bottom: 1px solid #eeeeee;
+
+    white-space: nowrap;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+
+/* =========================================
+   ATTENDANCE BOX
+========================================= */
+
+.attendance-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.attendance-box input {
+    width: 280px;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+#message {
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status-present {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background-color: #e8f7ee;
+
+    color: #198754;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.status-out {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background-color: #fdeaea;
+
+    color: #dc3545;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   EMPTY TABLE
+========================================= */
+
+.empty {
+    text-align: center;
+
+    color: #777;
+
+    padding: 25px !important;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .dashboard {
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .container {
+        width: 100%;
+    }
+
+
+    /* Header */
+
+    .header {
+        padding: 20px 15px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .header h1 {
+        font-size: 22px;
+
+        line-height: 1.3;
+    }
+
+
+    .header p {
+        font-size: 13px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .dashboard-card {
+        padding: 18px;
+    }
+
+
+    .dashboard-card h3 {
+        font-size: 14px;
+    }
+
+
+    .dashboard-card h2 {
+        font-size: 28px;
+    }
+
+
+    /* Card */
+
+    .card {
+        padding: 15px;
+
+        margin-bottom: 15px;
+
+        border-radius: 10px;
+    }
+
+
+    .card > h2 {
+        font-size: 18px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* Add Employee */
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+
+    input,
+    select {
+        height: 44px;
+
+        font-size: 14px;
+    }
+
+
+    .primary {
+        width: 100%;
+
+        margin-top: 3px;
+    }
+
+
+    /* Section title */
+
+    .section-title {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .section-title h2 {
+        font-size: 18px;
+    }
+
+
+    .section-title input {
+        width: 100%;
+    }
+
+
+    /* Attendance */
+
+    .attendance-box {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .attendance-box input {
+        width: 100%;
+    }
+
+
+    .attendance-box .btn {
+        width: 100%;
+    }
+
+
+    /* Tables */
+
+    .table-wrapper {
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    table {
+        min-width: 700px;
+    }
+
+
+    th,
+    td {
+        padding: 10px;
+
+        font-size: 13px;
+    }
+
+
+    /* Buttons */
+
+    .clear {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 7px;
+    }
+
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+
+    .card {
+        padding: 12px;
+    }
+
+
+    .dashboard-card h2 {
+        font-size: 25px;
+    }
+
+
+    th,
+    td {
+        font-size: 12px;
+
+        padding: 8px;
+    }
+
+}
